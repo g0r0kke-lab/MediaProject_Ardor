@@ -60,18 +60,36 @@
 
 ```
 MediaProject_Ardor/
-├── Architecture/          # 멀티씬 로더, EventBroker, GameManager
-├── Gameplay/
-│   ├── Magnetic/          # MagneticManager, 앵커 클래스
-│   ├── Enemy/             # SkiaController, StorageSkia, DeactivateChaseSkia
-│   └── Interaction/       # TriggerBox, TriggerConditionHandler, EventActivator
-├── UI/                    # GameUIManager, 패널 스택
-├── Sound/                 # SoundManager, AudioClipData
-├── Dialogue/              # Yarn Spinner 래퍼, 로컬라이징
-├── Save/                  # SaveDataManager
-├── Input/                 # InputModeManager
-├── Camera/                # TimeLineManager, TimelineController
-└── Utility/               # DebugLogger, PerformanceMonitor
+└── Scripts/
+    ├── GameManager/            # GameManagerBass, GameManagerRegistry, Map별 GameManager
+    │   └── Debugger/           # Map1~2 StateDebugger
+    ├── Event/                  # EventBroker, EventActivator, TriggerConditionHandler
+    │                           # GameStateCondition, InventoryCondition, PartsCheckTrigger
+    ├── Player/                 # ThirdPersonController, PlayerMovementController
+    │                           # SomaShieldController, PlayerDialogueHandler, MainCam
+    ├── NPC/                    # SkiaController, StorageSkia, JailSkia
+    │                           # StorageSkiaManager, WalkDurationTrigger
+    ├── Gimmick/                # DeathZone, LaserRotator, RigidbodyGroupController
+    ├── UI/
+    │   ├── Core/               # IPanelState, PanelStateFactory
+    │   ├── Panels/             # PanelManager, GuideManager
+    │   │   └── States/         # HUD / Dialogue / Player / UI 모드 패널 상태
+    │   ├── Components/         # ButtonHover, UIBillboard, DisableButtonOnClick
+    │   └── Utils/              # BlackScreenFader, LoadingManager, VideoManager
+    │                           # EscapeKeyHandler, DeathEffectManager
+    ├── Sound/                  # SoundManager, LoopSound3D, Simple3DSound
+    │                           # BoxCollisionSound, TargetCollisionEffect, TimelineAudioVolumeSync
+    ├── Animation/              # FootstepHandlerBase, PlayerFootstepHandler
+    │                           # MonsterFootstepHandler, PullStateBehaviour, PushStateBehaviour
+    ├── InputMode/              # InputModeManager, InputModeTester, EditorDialogueSkip
+    ├── Inventory/              # InventoryUI, ItemData, ItemSlot, ItemPickup, ItemConsumer
+    ├── SaveSystem/             # SaveDataManager, SavePoint, SettingsManager
+    ├── Helpers/                # EditorChildSceneLoader, RuntimeChildSceneLoader
+    │                           # DebugLogger, ObjectPool, PerformanceMonitor
+    │                           # InteractionObjectNotifier, StateConditionalTrigger
+    ├── Map2/                   # DoorRotate, StateConditionalTrigger
+    └── Editor/                 # 에디터 전용 유틸리티 (빌드 미포함)
+                                # ThumbnailGenerator, AudioListenerFinder, LightDebugger
 ```
 
 > ⚠️ 이 레포지토리는 **스크립트만** 포함합니다. 모델, 텍스처, 오디오, 씬 등의 에셋은 포함되지 않습니다.
