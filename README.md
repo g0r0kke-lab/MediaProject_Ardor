@@ -1,4 +1,4 @@
-# MediaProject_Ardor
+# Poreia-Scripts
 
 > **Poreia** 개발에 참여한 Unity C# 스크립트 모음입니다.
 > 직접 설계·작성한 스크립트와 팀원 원본 코드에 기여(기능 추가·버그 수정·리팩토링)한 스크립트를 구분해 README를 작성했습니다.
