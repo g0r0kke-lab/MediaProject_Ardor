@@ -32,7 +32,7 @@ AI 존재 이데아(Idea)와 로봇이 인간을 괴물로 인식하게 만드�
 | 1 | **싱글턴 패턴** | `SaveDataManager`, `LoadingManager`, `SoundManager`, `GameUIManager`, `MagneticManager`, `SettingsManager` | 씬 전환 시 파괴되지 않는 전역 매니저를 단일 인스턴스로 유지 |
 | 2 | **템플릿 메서드 패턴** | `GameManagerBass<TState>` | 기반 클래스에서 게임 매니저 초기화 순서를 고정하고, 자식 클래스는 맵별 세부 구현만 담당 |
 | 3 | **빌드 타임 컴파일** | `SaveDataManager` | 개발 모드에서는 평문 저장 전략, 릴리즈 모드에서는 암호화 저장 전략을 컴파일 시점에 선택 |
-| 4 | **옵저버 패턴** | `TimeLineManager` → `EventBroker` | 타임라인 종료 시 `EventBroker`를 통해 구독 중인 모든 시스템(GameManager, SoundManager 등)에 자동 알림 |
+| 4 | **옵저버 패턴** | `EventBroker` | 타임라인 종료 시 `EventBroker`를 통해 구독 중인 모든 시스템(GameManager, SoundManager 등)에 자동 알림 |
 | 5 | **Enum 기반 FSM** | `Map1~4GameManager`, `SkiaController` | 게임 진행 단계를 명시적 상태로 정의하고, 상태 변경 시 다음 단계로 자동 전환 관리 |
 | 6 | **지연 이벤트 콜백** | `GameManagerBass<TState>` | 타임라인 완료 시 실행할 액션을 UnityEvent에 미리 등록해 두고 일괄 실행 |
 | 7 | **레지스트리 패턴** | `GameManagerRegistry` | 제네릭 타입이 다른 GameManager들을 단일 저장소에서 씬별로 관리하고, 리플렉션으로 공통 메서드 호출 |
