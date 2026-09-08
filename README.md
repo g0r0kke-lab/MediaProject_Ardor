@@ -19,7 +19,7 @@ AI 존재 이데아(Idea)와 로봇이 인간을 괴물로 인식하게 만드�
 | 플랫폼 | PC (Steam / Stove Indie) |
 | 지원 언어 | 한국어 / 영어 (로컬라이징) |
 | 팀 | ARDORBIT (8인) |
-| 역할 | 프로그래머 |
+| 역할 | Team Lead, Project Manager, Lead Programmer |
 
 ---
 
