@@ -225,7 +225,7 @@ Scripts/
 ## ⚖️ 라이선스 및 저작권
 
 ```
-Copyright (c) 2026 [이름]. All Rights Reserved.
+Copyright (c) 2026 강희진. All Rights Reserved.
 ```
 
 저작권자의 명시적 서면 허가 없이 이 코드의 전부 또는 일부를 사용, 복사, 수정, 배포하는 행위를 금지합니다.  
